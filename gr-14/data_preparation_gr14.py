@@ -22,7 +22,7 @@ df['% Aprovados'] = df['% APROVADOS'].astype(str).str.replace('%', '').str.repla
 df['% Reprovados'] = df['% REPROVADOS'].astype(str).str.replace('%', '').str.replace(',', '.').astype(float)
 
 # ====== 5. Padronizar "Ano Letivo" (Série) se houver variações ======
-df['Ano Letivo'] = df['ANO LETIVO'].astype(str).str.strip().str.replace('ano', 'º ano', regex=False)
+df['Ano Letivo'] = df['SERIE'].astype(str).str.strip().str.replace('ano', 'º ano', regex=False)
 
 # Exemplo: se quiser forçar correção manual de alguns casos:
 # df['Ano Letivo'] = df['Ano Letivo'].replace({'1 ano': '1º ano', '2 ano': '2º ano'})
