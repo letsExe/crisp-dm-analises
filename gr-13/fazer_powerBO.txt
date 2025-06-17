@@ -1,0 +1,69 @@
+### 📌 **Etapa 1: Entendimento do Negócio (Já feito)**
+
+→ Seu foco continua o mesmo: situação dos acadêmicos ao longo dos anos, proporções, evolução.
+
+---
+
+### 📌 **Etapa 2: Entendimento dos Dados**
+
+→ Importa o mesmo arquivo `saida_tabela_GR13.xlsx` gerado no Python.
+
+---
+
+### 📌 **Etapa 3: Preparação dos Dados no Power BI (Power Query)**
+
+No Power BI:
+
+1. **Importar o Excel:**
+   → Ir em "Obter Dados" → Excel → Seleciona o `saida_tabela_GR13.xlsx`.
+
+2. **Verificar tipos de dados:**
+   → Garanta que "PERIODO LETIVO" seja número ou texto conforme necessário.
+
+3. **Corrigir Nomes de Colunas (se quiser):**
+   → Você pode renomear as colunas no Power Query para deixar mais amigável:
+   Exemplo:
+   `% Formado` → `Percentual Formados`
+   `trancado` → `Trancados`
+
+---
+
+### 📌 **Etapa 4: Modelagem (Visualizações no Power BI)**
+
+Aqui a parte legal! Sugestões de visuais:
+
+| Análise                                                        | Visual                                                    |
+| -------------------------------------------------------------- | --------------------------------------------------------- |
+| Evolução de cada situação ao longo dos anos                    | **Gráfico de linhas múltiplas**                           |
+| Comparação das proporções por ano                              | **Gráfico de barras empilhadas (Stacked Bar)**            |
+| Total anual de saídas                                          | **Gráfico de colunas simples**                            |
+| Heatmap das proporções (se quiser simular o heatmap do Python) | **Matriz no Power BI** com formatação condicional por cor |
+| Slicer por ano ou por situação                                 | **Segmentadores (Slicers)**                               |
+
+---
+
+### 📌 **Etapa 5: Avaliação (No Power BI)**
+
+* Revise se os gráficos estão legíveis.
+* Teste com filtros por ano.
+* Verifique se os totais e percentuais batem com o Excel original.
+
+---
+
+### 📌 **Etapa 6: Deployment (Entrega no Power BI)**
+
+| Opção                                     | O que fazer                                    |
+| ----------------------------------------- | ---------------------------------------------- |
+| **Exportar o .pbix**                      | Se for entregar offline                        |
+| **Publicar no Power BI Service (online)** | Se quiser criar um dashboard acessível via web |
+| **Exportar para PDF**                     | Para entrega em relatório estático             |
+
+---
+
+## ✅ Exemplo de Layout de Página no Power BI:
+
+**Página 1:** Visão Geral (Total Anual + Evolução por Categoria)
+**Página 2:** Proporções Percentuais por Ano
+**Página 3:** Matriz com Heatmap
+**Página 4 (opcional):** Filtros Interativos por Situação e Ano
+
