@@ -1,14 +1,16 @@
 #ignorar o .ENV
 .env
 
-#ignorando o GR-16
-/gr-16/gr-16_demografias.xlsx
-
-
 /gr-13/GR13_situacao_academica.xlsx
 /gr-13/saida_tabela_GR13.xlsx
 
 
 /gr-14/GR14.xlsx
-/gr-14/GR14_Dados_Limpos.xlsx
 /gr-14/GR14_Agrupado_Ano_Disciplina.xlsx
+/gr-14/GR16_Dados_Limpos.xlsx
+
+
+
+#ignorando o GR-16
+/gr-16/gr-16_demografias.xlsx
+/gr-16/GR16_Dados_Limpos.xlsx
